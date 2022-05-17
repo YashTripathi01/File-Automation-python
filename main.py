@@ -4,7 +4,7 @@ import time
 import logging
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
-# from constants import*
+from constants import*
 
 # folder initialization
 source_dir = SOURCE_DIR
