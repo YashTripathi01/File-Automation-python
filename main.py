@@ -13,6 +13,7 @@ destination_pdf = DES_PDF
 destination_videos = DES_VID
 destination_isoFile = DES_ISO
 destination_textFile = DES_TEXT
+destination_pythonFile = DES_PY
 
 # to make change filename if already exists
 
@@ -62,6 +63,9 @@ class MoverHandler(FileSystemEventHandler):
                     move_file(dest, entry, name)
                 elif name.endswith('.txt') or name.endswith('.ttf'):
                     dest = destination_textFile
+                    move_file(dest, entry, name)
+                elif name.endswith('.py') or name.endswith('.ipynb'):
+                    dest = destination_pythonFile
                     move_file(dest, entry, name)
 
 
