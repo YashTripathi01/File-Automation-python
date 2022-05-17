@@ -1,5 +1,5 @@
 venv/
 constants.py
 __pycache__/
-file_automate.sh
 my_startup.service
+file_automate.sh
